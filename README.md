@@ -1,28 +1,39 @@
 HPR - Hotel Price Reducer
-Overview
-The HPR (Hotel Price Reducer) project aims to assist users in finding the best hotel deals by bypassing geographical restrictions on pricing. Online travel agencies (OTAs) often display dynamic pricing based on the user's location, causing significant price variations. Our research found that hotel prices for users in India are often lower than for those in other regions, such as Israel. To address this, HPR leverages VPN technology to retrieve competitive pricing and provide users with exclusive access to the lowest available hotel deals.
+Overview-
+The HPR (Hotel Price Reducer) project aims to assist users in finding the best hotel deals by bypassing geographical restrictions on pricing.
+Online travel agencies (OTAs) often display dynamic pricing based on the user's location, causing significant price variations. 
+Our research found that hotel prices for users in India are often lower than for those in other regions, such as Israel. 
+To address this, HPR leverages VPN technology to retrieve competitive pricing and provide users with exclusive access to the lowest available hotel deals.
 
 Through a streamlined web interface, users can input their hotel details and travel dates to search for hotel deals. A regular user receives results from one meta-search provider, while a premium user sees pricing from three major providers: Google Hotels, Trivago, and Skyscanner. Each result includes a direct booking link, allowing users to access the lowest available prices instantly.
 
-Features
-Location-Specific Pricing: Uses a VPN to retrieve hotel prices based on user-defined regions.
+Features-
+Location-Specific Pricing: Uses a VPN to retrieve hotel prices from India.
+
 User Tiers: Regular users receive one result, while premium users access multiple meta-search providers.
+
 Comprehensive Data Retrieval: Pulls pricing from multiple providers for premium users to ensure the best deal visibility.
+
 Efficient Backend: Optimized for data retrieval, caching, and response time.
+
 Seamless Booking Links: Each search result includes a direct booking link.
-Tech Stack
+
+Tech Stack-
 Backend: Python, Selenium
+
 Frontend: React
+
 Database: MariaDB
+
 Infrastructure: Oracle Cloud, Linux
+
 VPN: OpenVPN for geographical pricing control
+
 System Architecture
 The system is split into two main components:
 
 Frontend: A React-based user interface that allows users to enter their search criteria and view results.
 Backend: A Python application using Selenium to interact with hotel meta-search providers (Google Hotels, Trivago, Skyscanner). A VPN is used to bypass geographical restrictions, retrieving exclusive offers from selected regions. The backend also manages data storage, caching, and serves API requests for the frontend.
-
-Try the system yourself on hpr.life
 
 https://www.youtube.com/watch?v=Rzfhok_U8Ms&ab_channel=DanielMarkov
 
